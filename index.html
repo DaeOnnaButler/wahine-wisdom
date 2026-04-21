@@ -104,7 +104,7 @@
   .copied-msg { font-size: 0.8rem; color: var(--teal-light); opacity: 0; transition: opacity 0.3s; margin-top: 0.5rem; height: 1rem; }
   .copied-msg.show { opacity: 1; }
 
-  /* JOURNAL embed */
+  /* JOURNAL section */
   #journal { background: rgba(180,211,178,0.15); }
   .embed-placeholder { background: #fff; border-radius: 20px; border: 1px solid rgba(36,90,99,0.1); padding: 3rem; text-align: center; }
   .embed-placeholder .icon { font-size: 2.5rem; margin-bottom: 1rem; }
@@ -134,29 +134,15 @@
   /* COMMUNITY */
   #community { background: rgba(36,90,99,0.04); }
 
-  /* QUOTE */
-  .quote-section { background: #FDF5E6; padding: 4rem 1.5rem; text-align: center; }
-  .quote-inner { max-width: 800px; margin: 0 auto; }
-  .quote-mark { font-size: 3rem; color: rgba(36,90,99,0.2); font-family: var(--font-heading); line-height: 1; }
-  .quote-text { font-family: var(--font-heading); font-size: clamp(1.3rem, 3vw, 2rem); font-style: italic; color: var(--teal); line-height: 1.5; margin: 0.5rem 0 1rem; }
-  .quote-attr { font-size: 0.95rem; color: rgba(36,90,99,0.55); margin-bottom: 2.5rem; }
-  .flag-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
-  .flag-card { background: #fff; border: 1px solid rgba(36,90,99,0.1); border-radius: 16px; padding: 1.25rem 1.5rem; text-align: center; min-width: 140px; }
-  .flag-card .flag { font-size: 1.75rem; margin-bottom: 0.5rem; }
-  .flag-card .name { font-weight: 600; font-size: 0.875rem; color: var(--teal); }
-  .flag-card .msg { font-size: 0.8rem; color: rgba(36,90,99,0.55); font-style: italic; margin-top: 0.25rem; }
-
   /* FOOTER */
   footer { background: var(--teal); padding: 2.5rem 1.5rem; text-align: center; }
   footer p { color: rgba(255,255,255,0.75); font-size: 0.875rem; }
-  footer p.sub { color: rgba(255,255,255,0.45); font-size: 0.8rem; margin-top: 0.4rem; }
 
   @media (max-width: 640px) {
     .nav-links { display: none; }
     .hamburger { display: flex; }
     .hero { padding: 3.5rem 1rem 3rem; }
     section { padding: 3rem 1rem; }
-    .affirmation-card { padding: 2rem 1.25rem; }
   }
 </style>
 </head>
@@ -198,52 +184,6 @@
   </div>
 </div>
 
-<section>
-  <div class="section-inner" style="text-align:center;">
-    <h2 class="section-title" style="margin-bottom:0.5rem;">You carry the <em>strength</em> of your ancestors</h2>
-    <p class="section-sub" style="margin:0.5rem auto 2.5rem;">Your Pacific roots run deep. These tools are here to help you remember who you are.</p>
-    <div class="feature-grid">
-      <div class="feature-card card-teal" onclick="document.getElementById('affirmations').scrollIntoView({behavior:'smooth'})">
-        <div class="blob"></div>
-        <div class="icon-wrap">✨</div>
-        <h3>Daily Affirmations</h3>
-        <p>Start each day with powerful words that remind you of your worth and potential.</p>
-      </div>
-      <div class="feature-card card-pink" onclick="document.getElementById('journal').scrollIntoView({behavior:'smooth'})">
-        <div class="blob"></div>
-        <div class="icon-wrap">📓</div>
-        <h3>Confidence Journal</h3>
-        <p>A private space to reflect, celebrate wins, and track your growth journey.</p>
-      </div>
-      <div class="feature-card card-gold" onclick="document.getElementById('resources').scrollIntoView({behavior:'smooth'})">
-        <div class="blob"></div>
-        <div class="icon-wrap">💡</div>
-        <h3>Resource Hub</h3>
-        <p>Tips and inspiration curated to help you build unshakeable confidence.</p>
-      </div>
-      <div class="feature-card card-dark" onclick="document.getElementById('community').scrollIntoView({behavior:'smooth'})">
-        <div class="blob"></div>
-        <div class="icon-wrap">💬</div>
-        <h3>Community Wall</h3>
-        <p>An uplifting space where girls encourage each other and share their stories.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="quote-section">
-  <div class="quote-inner">
-    <div class="quote-mark">"</div>
-    <p class="quote-text">You come from people who crossed oceans. That courage lives in you.</p>
-    <p class="quote-attr">— A message for every Pacific girl 🌊</p>
-    <div class="flag-cards">
-      <div class="flag-card"><div class="flag">🇫🇲</div><div class="name">Micronesia</div><div class="msg">Your islands shaped a warrior.</div></div>
-      <div class="flag-card"><div class="flag">🇵🇼</div><div class="name">Palau</div><div class="msg">Deep roots grow tall trees.</div></div>
-      <div class="flag-card"><div class="flag">🌺</div><div class="name">Pacific Islands</div><div class="msg">The ocean is in your blood.</div></div>
-    </div>
-  </div>
-</div>
-
 <section id="affirmations">
   <div class="section-inner">
     <div style="text-align:center;">
@@ -275,13 +215,13 @@
     <div style="text-align:center;">
       <div class="section-tag">📓 Confidence Journal</div>
       <h2 class="section-title">Your <em>private</em> growth space</h2>
-      <p class="section-sub" style="margin:0 auto 2rem;">Reflect on your day, celebrate your wins, and watch yourself grow.</p>
+      <p class="section-sub" style="margin:0 auto 2rem;">A secure, encrypted place to vent, dream, and celebrate your wins without anyone else watching.</p>
     </div>
     <div class="embed-placeholder">
-      <div class="icon">📓</div>
-      <h3>My Private Journal</h3>
-      <p>Log your reflections and track your journey in your secure mobile app.</p>
-      <a href="PASTE_YOUR_LINK_HERE" target="_blank">Open My Journal →</a>
+      <div class="icon">🔒</div>
+      <h3>My Private Penzu Diary</h3>
+      <p>Click below to create your free, password-protected journal. Your words stay between you and the page.</p>
+      <a href="https://penzu.com/journals" target="_blank">Start Your Private Journal →</a>
     </div>
   </div>
 </section>
@@ -300,17 +240,10 @@
       <div class="challenge-item"><span class="emoji">🌊</span><span>Write down one thing about your culture or heritage you are proud of</span></div>
       <div class="challenge-item"><span class="emoji">✋</span><span>Raise your hand in class today — your answer matters</span></div>
       <div class="challenge-item"><span class="emoji">📝</span><span>Write a letter to your younger self telling her what you wish someone told you</span></div>
-      <div class="challenge-item"><span class="emoji">💬</span><span>Tell a Pacific Islander girl in your life that she is enough and that you see her</span></div>
     </div>
     <div class="resource-grid">
-      <div class="resource-card"><div class="resource-icon teal">⭐</div><div><div class="resource-title">You Were Never the Problem</div><div class="resource-badge">Self-Worth</div><p class="resource-desc">Many PI girls grow up feeling invisible or 'less than.' That feeling is a lie. Your worth was never up for debate.</p></div></div>
-      <div class="resource-card"><div class="resource-icon pink">🛡️</div><div><div class="resource-title">Your Culture Is Your Superpower</div><div class="resource-badge">Identity</div><p class="resource-desc">Being Micronesian or Pacific Islander in a world that doesn't always see you is hard. Here's how to wear your heritage as armor.</p></div></div>
-      <div class="resource-card"><div class="resource-icon teal">🧠</div><div><div class="resource-title">Silencing the Shame Voice</div><div class="resource-badge">Mindset</div><p class="resource-desc">That inner voice that says you don't belong? It's not yours — it was put there. Here's how to talk back.</p></div></div>
-      <div class="resource-card"><div class="resource-icon pink">💖</div><div><div class="resource-title">Loving Your Brown Body</div><div class="resource-badge">Self-Love</div><p class="resource-desc">Social media wasn't built with you in mind. But your body is strong, beautiful, and worthy of love exactly as it is.</p></div></div>
-      <div class="resource-card"><div class="resource-icon teal">🔥</div><div><div class="resource-title">Finding Your Voice</div><div class="resource-badge">Courage</div><p class="resource-desc">You were taught to stay quiet. But your voice matters. Here's how to start using it — one small step at a time.</p></div></div>
-      <div class="resource-card"><div class="resource-icon pink">🎯</div><div><div class="resource-title">Dreaming Beyond Your Island</div><div class="resource-badge">Growth</div><p class="resource-desc">College, careers, big goals — these aren't just for 'other' girls. Your dreams are valid and reachable.</p></div></div>
-      <div class="resource-card"><div class="resource-icon teal">👥</div><div><div class="resource-title">Being the First in Your Family</div><div class="resource-badge">Resilience</div><p class="resource-desc">Being a first-generation trailblazer is heavy and beautiful at the same time. You are not alone.</p></div></div>
-      <div class="resource-card"><div class="resource-icon pink">💡</div><div><div class="resource-title">Dealing With Being 'Different' at School</div><div class="resource-badge">Wellness</div><p class="resource-desc">Navigating schools where no one looks like you is exhausting. Here's how to hold your head high.</p></div></div>
+      <div class="resource-card"><div class="resource-icon teal">⭐</div><div><div class="resource-title">You Were Never the Problem</div><div class="resource-badge">Self-Worth</div><p class="resource-desc">Many PI girls grow up feeling invisible or 'less than.' That feeling is a lie.</p></div></div>
+      <div class="resource-card"><div class="resource-icon pink">🛡️</div><div><div class="resource-title">Your Culture Is Your Superpower</div><div class="resource-badge">Identity</div><p class="resource-desc">Being Pacific Islander is hard in some spaces. Use your heritage as armor.</p></div></div>
     </div>
   </div>
 </section>
@@ -339,7 +272,6 @@
 
 <footer>
   <p>Made with 💖 for Pacific Islander &amp; Micronesian girls who dare to shine 🌺</p>
-  <p class="sub">Wahine Wisdom · Your strength, your story, your shine</p>
 </footer>
 
 <script>
@@ -354,82 +286,36 @@ const affirmations = {
     "I do not have to shrink myself to make others comfortable.",
     "My voice deserves to be heard — in class, at home, and in the world.",
     "I am not behind. I am on my own powerful path.",
-    "My dreams are just as valid as anyone else's, no matter where I come from.",
-    "I am proud of who I am and the culture I carry.",
-    "I choose to speak kindly to myself today — I deserve that kindness.",
-    "My family's sacrifices are not a weight — they are wings.",
-    "I am the first of many things in my family, and that is something to celebrate.",
-    "I release the shame others placed on me — it was never mine to carry.",
-    "I am allowed to take up space. I am allowed to shine.",
-    "My story is still being written, and it is going to be incredible.",
-    "I am resilient. I am worthy. I am enough — always have been.",
-    "I come from islands of strength, and that strength flows through me every single day.",
-    "I am seen. I am loved. I matter."
+    "I am resilient. I am worthy. I am enough — always have been."
   ],
-  worth: [
-    "I am enough, exactly as I am. No one needs to tell me that for it to be true.",
-    "I deserve to be in every room I walk into.",
-    "My dreams are just as valid as anyone else's, no matter where I come from.",
-    "I am seen. I am loved. I matter."
-  ],
-  courage: [
-    "I do not have to shrink myself to make others comfortable.",
-    "My voice deserves to be heard — in class, at home, and in the world.",
-    "I am allowed to take up space. I am allowed to shine.",
-    "I release the shame others placed on me — it was never mine to carry."
-  ],
-  growth: [
-    "I am not behind. I am on my own powerful path.",
-    "My story is still being written, and it is going to be incredible.",
-    "I am the first of many things in my family, and that is something to celebrate.",
-    "My family's sacrifices are not a weight — they are wings."
-  ],
-  love: [
-    "My skin, my hair, my culture — all of it is beautiful.",
-    "I choose to speak kindly to myself today — I deserve that kindness.",
-    "I am proud of who I am and the culture I carry.",
-    "I come from islands of strength, and that strength flows through me every single day."
-  ]
+  worth: ["I am enough, exactly as I am.", "I deserve to be in every room I walk into."],
+  courage: ["I do not have to shrink myself.", "My voice deserves to be heard."],
+  growth: ["I am on my own powerful path.", "I am resilient."],
+  love: ["My skin, hair, and culture are beautiful.", "I am proud of who I am."]
 };
 
 let currentCat = 'all';
 let currentIdx = 0;
-let liked = false;
 
 function setAffirmation(idx) {
   const pool = affirmations[currentCat];
   currentIdx = ((idx % pool.length) + pool.length) % pool.length;
-  const el = document.getElementById('affirmationText');
-  el.style.opacity = '0';
-  el.style.transform = 'scale(0.97)';
-  el.style.transition = 'all 0.3s';
-  setTimeout(() => {
-    el.textContent = pool[currentIdx];
-    el.style.opacity = '1';
-    el.style.transform = 'scale(1)';
-  }, 200);
-  liked = false;
-  document.getElementById('likeBtn').textContent = '♡';
-  document.getElementById('likeBtn').classList.remove('liked');
+  document.getElementById('affirmationText').textContent = pool[currentIdx];
 }
 
 function newAffirmation() {
   const pool = affirmations[currentCat];
-  let next;
-  do { next = Math.floor(Math.random() * pool.length); } while (next === currentIdx && pool.length > 1);
-  setAffirmation(next);
+  setAffirmation(Math.floor(Math.random() * pool.length));
 }
 
 function toggleLike() {
-  liked = !liked;
   const btn = document.getElementById('likeBtn');
-  btn.textContent = liked ? '♥' : '♡';
-  btn.classList.toggle('liked', liked);
+  btn.textContent = btn.textContent === '♡' ? '♥' : '♡';
 }
 
 function copyAffirmation() {
   const text = document.getElementById('affirmationText').textContent;
-  navigator.clipboard.writeText(text).catch(() => {});
+  navigator.clipboard.writeText(text);
   const msg = document.getElementById('copiedMsg');
   msg.classList.add('show');
   setTimeout(() => msg.classList.remove('show'), 2000);
@@ -446,10 +332,7 @@ function toggleMenu() {
   document.getElementById('mobileMenu').classList.toggle('open');
 }
 
-// Set today's affirmation on load
-const today = new Date();
-const dayIdx = (today.getFullYear() * 366 + today.getMonth() * 31 + today.getDate()) % affirmations.all.length;
-setAffirmation(dayIdx);
+setAffirmation(0);
 </script>
 </body>
 </html>
