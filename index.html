@@ -108,7 +108,7 @@
   #journal { background: rgba(180,211,178,0.15); }
   .embed-wrap { border-radius: 20px; overflow: hidden; box-shadow: 0 4px 30px rgba(36,90,99,0.1); border: 1px solid rgba(36,90,99,0.1); }
   .embed-wrap iframe { display: block; width: 100%; border: none; }
-  .embed-placeholder { background: #fff; border-radius: 20px; border: 2px dashed rgba(36,90,99,0.2); padding: 3rem; text-align: center; }
+  .embed-placeholder { background: #fff; border-radius: 20px; border: 1px solid rgba(36,90,99,0.1); padding: 3rem; text-align: center; }
   .embed-placeholder .icon { font-size: 2.5rem; margin-bottom: 1rem; }
   .embed-placeholder h3 { font-family: var(--font-heading); font-size: 1.3rem; color: var(--teal); margin-bottom: 0.5rem; }
   .embed-placeholder p { font-size: 0.9rem; color: rgba(36,90,99,0.6); margin-bottom: 1.5rem; }
@@ -133,7 +133,7 @@
   .resource-badge { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 6px; background: rgba(134,206,203,0.2); color: var(--teal); margin-bottom: 0.4rem; }
   .resource-desc { font-size: 0.83rem; color: rgba(36,90,99,0.65); line-height: 1.55; }
 
-  /* COMMUNITY embed */
+  /* COMMUNITY */
   #community { background: rgba(36,90,99,0.04); }
 
   /* QUOTE */
@@ -164,7 +164,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-inner">
     <div class="nav-logo">
@@ -191,7 +190,6 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-badge">✨ For Pacific Islander &amp; Micronesian girls 🌺</div>
   <h1>Sis, you have <span class="teal">always</span> been <span class="pink">worthy</span> — someone just forgot to tell you</h1>
@@ -202,7 +200,6 @@
   </div>
 </div>
 
-<!-- FEATURE CARDS -->
 <section>
   <div class="section-inner" style="text-align:center;">
     <h2 class="section-title" style="margin-bottom:0.5rem;">You carry the <em>strength</em> of your ancestors</h2>
@@ -236,7 +233,6 @@
   </div>
 </section>
 
-<!-- QUOTE -->
 <div class="quote-section">
   <div class="quote-inner">
     <div class="quote-mark">"</div>
@@ -250,7 +246,6 @@
   </div>
 </div>
 
-<!-- AFFIRMATIONS -->
 <section id="affirmations">
   <div class="section-inner">
     <div style="text-align:center;">
@@ -277,7 +272,6 @@
   </div>
 </section>
 
-<!-- JOURNAL -->
 <section id="journal">
   <div class="section-inner">
     <div style="text-align:center;">
@@ -285,22 +279,15 @@
       <h2 class="section-title">Your <em>private</em> growth space</h2>
       <p class="section-sub" style="margin:0 auto 2rem;">Reflect on your day, celebrate your wins, and watch yourself grow.</p>
     </div>
-    <!-- REPLACE THE IFRAME SRC WITH YOUR GLIDE APP URL OR GOOGLE FORM URL -->
     <div class="embed-placeholder" id="journalEmbed">
       <div class="icon">📓</div>
-      <h3>Set Up Your Journal</h3>
-      <p>Replace this placeholder with your Glide app embed or Google Form link. See the setup guide for instructions.</p>
-      <a href="https://glideapps.com" target="_blank">Create your Glide Journal →</a>
+      <h3>My Journal</h3>
+      <p>Click below to open your secure journaling space and start tracking your journey.</p>
+      <a href="PASTE_YOUR_LINK_HERE" target="_blank">Open My Journal →</a>
     </div>
-    <!-- UNCOMMENT AND PASTE YOUR EMBED URL BELOW ONCE READY:
-    <div class="embed-wrap">
-      <iframe src="YOUR_GLIDE_OR_GOOGLE_FORM_URL" height="700"></iframe>
-    </div>
-    -->
   </div>
 </section>
 
-<!-- RESOURCES -->
 <section id="resources">
   <div class="section-inner">
     <div style="text-align:center;">
@@ -330,7 +317,6 @@
   </div>
 </section>
 
-<!-- COMMUNITY -->
 <section id="community">
   <div class="section-inner">
     <div style="text-align:center;">
@@ -338,22 +324,21 @@
       <h2 class="section-title">We <em>see</em> each other here</h2>
       <p class="section-sub" style="margin:0 auto 2rem;">A space where Pacific Islander and Micronesian girls speak freely and remind each other: you are not alone.</p>
     </div>
-    <!-- REPLACE WITH YOUR PADLET EMBED CODE -->
-    <div class="embed-placeholder">
-      <div class="icon">💬</div>
-      <h3>Set Up Your Community Wall</h3>
-      <p>Replace this with your Padlet embed. Create a free Padlet board, then click Share → Embed and paste the code here.</p>
-      <a href="https://padlet.com" target="_blank">Create your Padlet →</a>
+
+    <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:20px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4">
+      <p style="padding:0;margin:0">
+        <iframe src="https://padlet.com/embed/ofrcxbgvefwej3o" frameborder="0" allow="camera;microphone;geolocation;display-capture;clipboard-write" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe>
+      </p>
+      <div style="display:flex;align-items:center;justify-content:end;margin:0;padding:8px 8px 8px 0">
+        <a href="https://padlet.com?ref=embed" style="display:flex;align-items:center;gap:5px;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank">
+          <span aria-hidden style="color:#9E9E9E;font-size:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1">Made with</span>
+          <img src="https://padlet.net/emails/padlet_email_logo_2026_text-dark-200.png" height="12" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none;display:block" alt="Made with Padlet">
+        </a>
+      </div>
     </div>
-    <!-- PASTE YOUR PADLET EMBED CODE HERE:
-    <div class="padlet-embed" style="border-radius:16px;overflow:hidden;">
-      PASTE PADLET IFRAME CODE HERE
-    </div>
-    -->
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p>Made with 💖 for Pacific Islander &amp; Micronesian girls who dare to shine 🌺</p>
   <p class="sub">Wahine Wisdom · Your strength, your story, your shine</p>
